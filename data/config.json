@@ -1,0 +1,34 @@
+{
+  "businessName": "DaiBodyCare",
+  "tagline": "Salud, belleza y bienestar de la mano de Nuskin",
+  "logo": "assets/logo-placeholder.jpg",
+  "mode": "catalog",
+  "businessType": "skincare",
+  "currency": "ARS",
+  "whatsapp": "5491151377544",
+  "instagram": "https://instagram.com/daibodycare",
+  "address": "Martín Coronado",
+  "primaryColor": "#D96B3B",
+  "secondaryColor": "#9AAFC0",
+  "backgroundColor": "#F8F7F5",
+  "surfaceColor": "#FFFFFF",
+  "textColor": "#1E2022",
+  "mutedColor": "#6E7478",
+  "fontFamily": "Manrope",
+  "heroImage": "assets/images/hero.svg",
+  "enableCart": false,
+  "enableWhatsAppOrders": true,
+  "enableTableService": false,
+  "tableNumber": null,
+  "ordering": {
+    "delivery": {
+      "enabled": true,
+      "requireAddress": true,
+      "requireBetweenStreets": true,
+      "shippingCost": null
+    },
+    "pickup": {
+      "enabled": true
+    }
+  }
+}

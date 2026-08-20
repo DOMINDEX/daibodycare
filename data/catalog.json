@@ -1,0 +1,152 @@
+{
+  "categories": [
+    {
+      "id": "suplementos",
+      "name": "Suplementos",
+      "icon": "capsule",
+      "items": [
+        {
+          "id": "colageno-nuskin",
+          "title": "Colágeno Nu Skin",
+          "description": "Colágeno en polvo para complementar tu rutina de bienestar y cuidado diario.",
+          "price": null,
+          "images": [
+            "assets/images/colageno1.png",
+            "assets/images/colageno2.png"
+          ],
+          "featured": false,
+          "available": true
+        },
+        {
+          "id": "colageno-nuskin-pack-3",
+          "title": "Colágeno Nu Skin - Pack x3",
+          "description": "Pack de 3 potes de Colágeno Nu Skin. Consultá disponibilidad y precio.",
+          "price": null,
+          "images": [
+            "assets/images/colageno1.png",
+            "assets/images/colageno2.png"
+          ],
+          "featured": false,
+          "available": true
+        },
+        {
+          "id": "colageno-nuskin-pack-6",
+          "title": "Colágeno Nu Skin - Pack x6",
+          "description": "Pack de 6 potes de Colágeno Nu Skin. Consultá disponibilidad y precio.",
+          "price": null,
+          "images": [
+            "assets/images/colageno1.png",
+            "assets/images/colageno2.png"
+          ],
+          "featured": false,
+          "available": true
+        },
+        {
+          "id": "colageno-nuskin-pack-12",
+          "title": "Colágeno Nu Skin - Pack x12",
+          "description": "Pack de 12 potes de Colágeno Nu Skin. Consultá disponibilidad y precio.",
+          "price": null,
+          "images": [
+            "assets/images/colageno1.png",
+            "assets/images/colageno2.png"
+          ],
+          "featured": false,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "cuidado-bucal",
+      "name": "Cuidado bucal",
+      "icon": "stars",
+      "items": [
+        {
+          "id": "pasta-dental-ap24",
+          "title": "Pasta Dental AP 24",
+          "description": "Pasta dental AP 24 de Nu Skin para incorporar a tu rutina diaria de higiene bucal.",
+          "price": null,
+          "images": [
+            "assets/images/pasta.png"
+          ],
+          "featured": false,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "cuidado-facial",
+      "name": "Cuidado facial",
+      "icon": "emoji-smile",
+      "items": [
+        {
+          "id": "lumispa",
+          "title": "LumiSpa",
+          "description": "Dispositivo facial LumiSpa para complementar tu rutina de limpieza y cuidado de la piel.",
+          "price": null,
+          "images": [ "assets/images/lumi.png" ],
+          "featured": false,
+          "available": true
+        },
+        {
+          "id": "lumispa-crema",
+          "title": "Crema para LumiSpa",
+          "description": "Crema de uso complementario para tu rutina con LumiSpa.",
+          "price": null,
+          "images": [],
+          "featured": false,
+          "available": true
+        },
+        {
+          "id": "ageloc-boost",
+          "title": "ageLOC Boost",
+          "description": "Dispositivo facial ageLOC Boost para potenciar tu rutina de cuidado de la piel.",
+          "price": null,
+          "images": [ "assets/images/boost.png" ],
+          "featured": false,
+          "available": true
+        },
+        {
+          "id": "ageloc-boost-crema",
+          "title": "Crema para ageLOC Boost",
+          "description": "Crema complementaria para utilizar junto con ageLOC Boost.",
+          "price": null,
+          "images": [],
+          "featured": false,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "cuidado-corporal",
+      "name": "Cuidado corporal",
+      "icon": "person-arms-up",
+      "items": [
+        {
+          "id": "wellspa",
+          "title": "WellSpa",
+          "description": "Dispositivo corporal WellSpa para complementar tu rutina de cuidado corporal.",
+          "price": null,
+          "images": [ "assets/images/wellspa.png" ],
+          "featured": false,
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": "maquillaje",
+      "name": "Maquillaje y pestañas",
+      "icon": "brush",
+      "items": [
+        {
+          "id": "nu-colour-lash-brow",
+          "title": "Nu Colour Lash + Brow Serum",
+          "description": "Serum para pestañas y cejas con formato práctico para incorporar a tu rutina de belleza.",
+          "price": null,
+          "images": [ "assets/images/rimel.png" ],
+          "featured": false,
+          "available": true
+        }
+      ]
+    }
+  ]
+}
