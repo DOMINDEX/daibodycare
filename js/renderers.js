@@ -639,6 +639,7 @@ export function renderMenu(config, catalog, root) {
     wireCategoryNav();
     wireImageGalleries(root);
     wireAddButtons(config, root);
+    wireInquiryButtons(config, root);
 }
 
 function menuRowHtml(
@@ -701,23 +702,39 @@ function menuRowHtml(
             : ''
         }
 
-        ${config.enableCart && !unavailable
-            ? `
-              <div class="menu-row-actions">
-                <button
-                  type="button"
-                  class="btn-add-discrete"
-                  data-add-id="${escapeHtml(item.id)}"
-                  aria-label="Agregar ${escapeHtml(
-                item.title
-            )} al pedido"
-                >
-                  Agregar
-                </button>
-              </div>
-            `
+        ${!unavailable
+            ? item.price !== null &&
+                item.price !== undefined &&
+                item.price !== '' &&
+                config.enableCart
+                ? `
+          <div class="menu-row-actions">
+            <button
+              type="button"
+              class="btn-add-discrete"
+              data-add-id="${escapeHtml(item.id)}"
+              aria-label="Agregar ${escapeHtml(item.title)} al pedido"
+            >
+              Agregar
+            </button>
+          </div>
+        `
+                : config.enableWhatsAppOrders
+                    ? `
+            <div class="menu-row-actions">
+              <button
+                type="button"
+                class="btn-add-discrete"
+                data-inquire-id="${escapeHtml(item.id)}"
+                aria-label="Consultar por ${escapeHtml(item.title)}"
+              >
+                Consultar
+              </button>
+            </div>
+          `
+                    : ''
             : ''
-        }
+}
 
       </div>
     </article>

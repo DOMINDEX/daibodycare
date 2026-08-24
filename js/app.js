@@ -20,17 +20,14 @@ const els = {
     offcanvasBody: document.getElementById('cart-offcanvas-body'),
     backToTop: document.getElementById('back-to-top'),
     toastContainer: document.getElementById('toast-container'),
+    mapsLink: document.getElementById('maps-link'),
+    footerLocation: document.getElementById('footer-location')
 };
 
 let config = null;
 let catalog = null;
 let cart = null;
 
-const MODE_LABELS = {
-    menu: { eyebrow: 'Carta digital' },
-    catalog: { eyebrow: 'Catálogo' },
-    order: { eyebrow: 'Pedí online' },
-};
 
 function resolveMode() {
     const override = new URLSearchParams(window.location.search).get('mode');
@@ -60,7 +57,9 @@ function renderChrome() {
     });
 
     const mode = resolveMode();
-    els.heroEyebrow.textContent = MODE_LABELS[mode]?.eyebrow || '';
+
+    els.heroEyebrow.textContent = config.heroEyebrow || '';
+    els.heroEyebrow.style.display = config.heroEyebrow ? '' : 'none';
     els.heroTitle.textContent = config.businessName || '';
     els.heroSub.textContent = config.tagline || '';
     els.heroSub.style.display = config.tagline ? '' : 'none';
@@ -75,14 +74,30 @@ function renderChrome() {
     if (config.instagram) els.igLink.href = config.instagram;
 
     els.footerBusiness.textContent = config.businessName || '';
-    els.footerAddress.textContent = config.address || '';
-    els.footerAddress.parentElement.style.display = config.address ? '' : 'none';
+    const hasLocation =
+        !!config.address && !!config.googleMapsUrl;
+
+    els.footerLocation.style.display =
+        hasLocation ? '' : 'none';
+
+    if (hasLocation) {
+        els.footerAddress.innerHTML = `<i class="bi bi-geo-alt me-1" aria-hidden="true"></i>${config.address}`;
+        els.footerAddress.href = config.googleMapsUrl;
+    }
 
     els.footerWhatsapp.style.display = hasWhatsapp ? '' : 'none';
     if (hasWhatsapp) els.footerWhatsapp.href = `https://wa.me/${config.whatsapp.replace(/[^\d]/g, '')}`;
 
     els.footerInstagram.style.display = config.instagram ? '' : 'none';
     if (config.instagram) els.footerInstagram.href = config.instagram;
+
+    const hasMaps = !!config.googleMapsUrl;
+
+    els.mapsLink.style.display = hasMaps ? '' : 'none';
+
+    if (hasMaps) {
+        els.mapsLink.href = config.googleMapsUrl;
+    }
 
     return mode;
 }
@@ -112,7 +127,6 @@ function renderCartOffcanvas() {
         <i class="bi bi-bag-heart" aria-hidden="true"></i>
         <p class="mb-0">
           Todavía no agregaste productos.<br>
-          Elegí algo rico del menú.
         </p>
       </div>
     `;
@@ -223,7 +237,7 @@ function renderCartOffcanvas() {
                     for="delivery-method-delivery"
                   >
                     <i class="bi bi-truck me-1"></i>
-                    Delivery
+                    Envío
                   </label>
                 </div>
               `
@@ -246,7 +260,7 @@ function renderCartOffcanvas() {
                     for="delivery-method-pickup"
                   >
                     <i class="bi bi-shop me-1"></i>
-                    Retirar
+                    Retiro
                   </label>
                 </div>
               `
@@ -323,7 +337,7 @@ function renderCartOffcanvas() {
           class="form-control"
           id="cf-notes"
           rows="2"
-          placeholder="Ej: Sin sal, tocar timbre, etc."
+          placeholder="Ej: Departamento 6, Tocar timbre, etc."
         ></textarea>
       </div>
 

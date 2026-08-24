@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>DOMINDEX Platform</title>
+    <title>DaiBodyCare</title>
     <meta name="theme-color" content="#7C3AED">
-    <meta name="description" content="Carta digital, catálogo y pedidos por WhatsApp — plataforma DOMINDEX.">
+    <meta name="description" content="Cuidado Corporal y Facial">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +30,9 @@
             </a>
             <a id="wa-nav-link" href="#" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsApp" style="display:none;">
                 <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a id="maps-link" href="#" target="_blank" rel="noopener" class="icon-btn" aria-label="Ubicación" style="display:none;">
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
             </a>
         </div>
     </header>
@@ -59,9 +62,11 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="fw-semibold text-body mb-1" id="footer-business"></div>
-            <p class="mb-1" style="display:none;">
-                <i class="bi bi-geo-alt me-1" aria-hidden="true"></i><span id="footer-address"></span>
+            <div class="fw-semibold mb-1" id="footer-business"></div>
+            <p class="mb-1" id="footer-location" style="display:none;">
+                <a id="footer-address" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-geo-alt me-1" aria-hidden="true"></i>
+                </a>
             </p>
             <p class="mb-1">
                 <a id="footer-whatsapp" href="#" target="_blank" rel="noopener" style="display:none;">
@@ -73,7 +78,14 @@
                     <i class="bi bi-instagram me-1" aria-hidden="true"></i>Instagram
                 </a>
             </p>
-            <p class="mt-3 mb-0" style="opacity:.6;">Desarrollado por DOMINDEX</p>
+            <p class="mt-3 mb-0">
+                Desarrollado por
+                <a href="https://instagram.com/domindex.dev"
+                   target="_blank"
+                   rel="noopener">
+                    DOMINDEX
+                </a>
+            </p>
         </div>
     </footer>
 
