@@ -18,37 +18,41 @@
           "available": true
         },
         {
-          "id": "colageno-nuskin-pack-3",
-          "title": "Colágeno Nu Skin - Pack x3",
-          "description": "Pack de 3 potes de Colágeno Nu Skin. Consultá disponibilidad y precio.",
+          "id": "optimum-nuskin",
+          "title": "Optimum Omega",
+          "description": "Aumenta la ingesta dietética de ácidos grasos omega 3. Consultá disponibilidad y precio.",
           "price": null,
           "images": [
-            "assets/images/colageno1.png",
-            "assets/images/colageno2.png"
+            "assets/images/optimum.jpeg",
+            "assets/images/optimum2.jpeg",
+            "assets/images/optimum3.jpeg",
+            "assets/images/optimum4.jpeg"
           ],
           "featured": false,
           "available": true
         },
         {
-          "id": "colageno-nuskin-pack-6",
-          "title": "Colágeno Nu Skin - Pack x6",
-          "description": "Pack de 6 potes de Colágeno Nu Skin. Consultá disponibilidad y precio.",
+          "id": "night-time",
+          "title": "Night Time",
+          "description": "Apoya un sueño de calidad. Sabor a frutas tropicales Consultá disponibilidad y precio.",
           "price": null,
           "images": [
-            "assets/images/colageno1.png",
-            "assets/images/colageno2.png"
+            "assets/images/nt.jpeg",
+            "assets/images/nt2.jpeg",
+            "assets/images/nt3.jpeg"
           ],
           "featured": false,
           "available": true
         },
         {
-          "id": "colageno-nuskin-pack-12",
-          "title": "Colágeno Nu Skin - Pack x12",
-          "description": "Pack de 12 potes de Colágeno Nu Skin. Consultá disponibilidad y precio.",
+          "id": "lifepak-elements",
+          "title": "Lifepak Elements",
+          "description": "Aporta importantes vitaminas y minerales para cubrir deficiencias nutricionales. Consultá disponibilidad y precio.",
           "price": null,
           "images": [
-            "assets/images/colageno1.png",
-            "assets/images/colageno2.png"
+            "assets/images/lifepak.jpeg",
+            "assets/images/lifepak2.jpeg",
+            "assets/images/lifepak3.jpeg"
           ],
           "featured": false,
           "available": true
@@ -90,9 +94,9 @@
         {
           "id": "lumispa-crema",
           "title": "Crema para LumiSpa",
-          "description": "Crema de uso complementario para tu rutina con LumiSpa.",
+          "description": "Crema de uso complementario para tu rutina con LumiSpa. Para pieles sensibles",
           "price": null,
-          "images": [],
+          "images": [ "assets/images/crema-lumi2.jpeg" ],
           "featured": false,
           "available": true
         },
@@ -108,9 +112,9 @@
         {
           "id": "ageloc-boost-crema",
           "title": "Crema para ageLOC Boost",
-          "description": "Crema complementaria para utilizar junto con ageLOC Boost.",
+          "description": "Crema complementaria para utilizar junto con ageLOC Boost. Para piel normal/mixta",
           "price": null,
-          "images": [],
+          "images": [ "assets/images/crema-lumi.jpeg" ],
           "featured": false,
           "available": true
         }
