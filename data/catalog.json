@@ -18,6 +18,18 @@
           "available": true
         },
         {
+          "id": "nu-bi",
+          "title": "Suplemento Nu Bi",
+          "description": "Diseñado para mejorar la salud intestinal, equilibrar la microbiota y favorecer la digestión diaria",
+          "price": null,
+          "images": [
+            "assets/images/nubi.jpeg",
+            "assets/images/nubi2.jpeg"
+          ],
+          "featured": false,
+          "available": true
+        },
+        {
           "id": "optimum-nuskin",
           "title": "Optimum Omega",
           "description": "Aumenta la ingesta dietética de ácidos grasos omega 3. Consultá disponibilidad y precio.",
